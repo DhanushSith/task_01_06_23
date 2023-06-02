@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task-02-inbox</title>
+    <style>
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    border: 1px solid lightgray;
+    padding: 22px 22px;
+    width:70%;
+    height:80px;
+    margin:50px auto 0;
+    border-radius: 5px;
+    box-shadow: 0px 0px 6px 2px #d3d3d3bf; 
+}
+.container2{
+    border: 1px solid lightgray;
+    padding: 22px 22px;
+    width:70%;
+    height:80px;
+    margin:50px auto 0;
+    border-radius: 5px;
+    box-shadow: 0px 0px 6px 2px #d3d3d3bf; 
+    display: flex;
+    align-items: center;
+}
+.buttons{
+    width:fit-content;
+    height:30px;
+    position:relative;
+    display:flex;
+    align-items:center;
+    border-radius:3px;
+    overflow: hidden;
+}
+.buttons a{
+    text-decoration: none;
+    text-align: center;
+    padding: 6px 8px;
+    font-family: sans-serif;
+}
+
+.button{
+    position: relative;
+}
+.danger{
+    background-color:#dd3543;
+    color: white;
+}
+.stop{
+    background-color:#ffc107;
+    color: black;
+}
+.go{
+    background-color: #178853;
+    color:white;
+}
+
+
+
+.inbox{
+    text-decoration: none;
+    padding: 6px 8px;
+    font-family: sans-serif;
+    background-color:#0870fb;
+    color: white;
+    border-radius: 5px;
+    
+}
+
+.notification{
+    position: absolute;
+    top:-72%;
+    right:-20%;
+    font-size: 11px;
+    color:white;
+    background-color:#d63341;
+    border-radius: 30%;
+    width: 24px;
+    height: 15px;
+    padding: 1px 4px;
+}
+
+.profile{
+    text-decoration: none;
+    padding: 6px 8px;
+    font-family: sans-serif;
+    background-color:#0870fb;
+    color: white;
+    border-radius: 5px;
+}
+
+
+.profile::after{
+    content: "";
+    width:13px;
+    height:13px;
+    background-color:#d63341;
+    border-radius: 50%;
+    position: absolute;
+    top:-67%;
+    
+    border: 2px solid white;
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="buttons">
+        <a href="#" class="danger">Left</a>
+        <a href="#" class="stop">Middle</a>
+        <a href="#" class="go">Right</a>
+        </div>
+    </div>
+
+    <div class="container2">
+        <div class="button">
+        <a href="#" class="inbox">Inbox <span class="notification">99+</span></a>
+    </div>
+  </div>
+
+  <div class="container2">
+    <div class="button">
+        <a href="#" class="profile">Profile</a>
+    </div>
+  </div>
+</body>
+</html>
